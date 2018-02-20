@@ -14,8 +14,6 @@ import 'react-dates/lib/css/_datepicker.css';
 
 const store = configureStore();
 
-console.log(visibleExpenses);
-
 const jsx = (
     <Provider store= {store}>
         <AppRouter />

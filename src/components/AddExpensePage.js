@@ -4,7 +4,7 @@ import ExpenseForm from './ExpenseForm';
 import { addExpense } from '../actions/expenses';
 
 export class AddExpensePage extends React.Component {
-    onSubmit = (expense) => {
+    addExpense = (expense) => {
         this.props.addExpense(expense);
         this.props.history.push('/');
     };
@@ -13,7 +13,7 @@ export class AddExpensePage extends React.Component {
             <div>
                 <h1>Add Expense</h1>
                 <ExpenseForm
-                    onSubmit={this.onSubmit}
+                    onSubmit={this.addExpense}
                 />
             </div>
         )

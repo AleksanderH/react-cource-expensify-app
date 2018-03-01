@@ -78,7 +78,6 @@ test('shoud add expense with default values to database and store', () => {
                 ...defaultData
             }
         }); 
-
         return database.ref(`expenses/${actions[0].expense.id}`).once('value')
     }).then((snapshot) => {
         expect(snapshot.val()).toEqual(defaultData);

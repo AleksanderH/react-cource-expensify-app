@@ -1,12 +1,12 @@
 import * as firebase from 'firebase';
 
 const config = {
-    apiKey: "AIzaSyCs4e6syHa2BZte4h9qW1nSwzXCdjIoeKc",
-    authDomain: "expensify-223f3.firebaseapp.com",
-    databaseURL: "https://expensify-223f3.firebaseio.com",
-    projectId: "expensify-223f3",
-    storageBucket: "expensify-223f3.appspot.com",
-    messagingSenderId: "862147468322"
+    apiKey: process.env.FIREBASE_API_KEY,
+    authDomain: process.env.FIREBASE_DOMAIN,
+    databaseURL: process.env.FIREBASE_DATABASE_URL,
+    projectId: process.env.FIREBASE_PROJECT_ID,
+    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.FIREBASE_MESSAGIN_SENDER_ID
 };
 
 firebase.initializeApp(config);

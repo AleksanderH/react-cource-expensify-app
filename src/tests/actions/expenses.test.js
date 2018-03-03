@@ -1,4 +1,4 @@
-import { setExpenses, startSetExpenses, editExpense, removeExpense, addExpense, startAddExpense } from "../../actions/expenses";
+import { setExpenses, startSetExpenses, editExpense, removeExpense, startRemoveExpense, addExpense, startAddExpense } from "../../actions/expenses";
 import expenses from '../fixtures/expenses';
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
@@ -15,7 +15,7 @@ beforeEach( (done) => {
 });
 
 test('should setup remove expense action object', () =>{
-    const result = removeExpense({id: 12345});
+    const result = removeExpense(12345);
     expect(result).toEqual({
         type: 'REMOVE_EXPENSE',
         id: 12345

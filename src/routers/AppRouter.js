@@ -5,7 +5,7 @@ import ExpenseDashboardPage from '../components/ExpenseDashboardPage';
 import AddExpensePage from '../components/AddExpensePage';
 import EditExpensePage from '../components/EditExpensePage';
 import HelpPage from '../components/HelpPage';
-import { LoginPage } from '../components/LoginPage';
+import LoginPage from '../components/LoginPage';
 
 import NotFoundPage from '../components/NotFoundPage';
 

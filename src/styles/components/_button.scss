@@ -1,15 +1,26 @@
 .button{
     margin: 0 0;
-    background-color:#DF4225;
-    color: #eee;
-    transition: background-color 0.3s;
+    background-color: $orange;
+    color: $light;
     border: none;
     border-radius: 3px;
     padding: $m-size;
     font-size: $font-size-large;
     font-weight: 300;
+
+    transition: background-color 0.3s;
 }
 
 .button:hover{
-    background-color:#4CAF50;
+    background-color:$green;
 }
+
+.button__logout{
+    background-color: none;
+    transition: color 0.3s;
+}
+.button__logout:hover{
+    color: $dark-gray;
+    background-color: $orange;
+}
+
